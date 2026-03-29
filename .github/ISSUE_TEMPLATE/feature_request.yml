@@ -1,0 +1,40 @@
+name: ✨ 特性请求 (Feature Request)
+description: 对项目有针对多端功能架构的增强建议？
+title: "[Feature] <请用一句话概述特性>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        非常欢迎您分享任何让 Snippet Collector 变得更棒的点子！💡 
+  - type: textarea
+    id: what-problem
+    attributes:
+      label: 🤔 您遇到了什么痛点？(What Problem To Solve)
+      description: 麻烦您详细解释目前的工具在您的工作流里缺少了什么机制？遇到了什么障碍？
+      placeholder: |
+        目前 Android 端无法处理网页中“纯图片化”文本内容的摘录，这导致有时面对 PDF 格式电子书无从下手，严重阻碍连贯工作流。
+    validations:
+      required: true
+  - type: textarea
+    id: describe-solution
+    attributes:
+      label: 💡 期望的解决方案及应用场景 (Suggested Solution & Value)
+      description: 描述一下您预想中的这个特性的运作逻辑及其可能带来的巨大价值。
+      placeholder: |
+        希望能集成一个针对屏幕视图的 OCR 插件选项，当悬浮球被长按时激活区域框选截图识别，这将完美闭环对于非结构化文档的快捷收集机制！
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 可能的替代方案 (Alternatives Considered)
+      description: 您是否考虑过（或正在使用）其他方式暂时解决此痛点？有没有遇到新瓶颈？
+  - type: checkboxes
+    id: willing-to-pr
+    attributes:
+      label: 愿意提交 PR (Willing to Contribute?)
+      description: 告诉架构组您是否有意愿自己尝试上手开发这个功能？(没有任何心理负担，不勾选我们亦非常欢迎该 Idea！)
+      options:
+        - label: 是的，我愿意尝试在指导下发起针对它的 PR！
+        - label: 不了，我暂且没有时间或相关经验实现它。

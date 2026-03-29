@@ -1,0 +1,48 @@
+name: 🐛 报告缺陷 (Bug Report)
+description: 遇到了问题或者报错？请告诉我们。
+title: "[Bug] <请填入简短描述>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您抽出时间报告 Bug！在填写之前，请确保您已经搜索了现有的 Issues 以避免重复。
+  - type: input
+    id: environment
+    attributes:
+      label: 🖥️ 运行环境及版本信息
+      description: |
+        请提供发生该问题的系统版本和底层脚本引擎版本。
+        【必填】例如：macOS 14.1 / Hammerspoon 0.9.100 ; 或 Android 13 / AutoJs6 v6.3.0
+      placeholder: 例如：Windows 11 / AutoHotkey v2.0.10
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 🔄 复现步骤 (Steps To Reproduce)
+      description: 如何一步步触发或复现这个问题？请尽量详细描述操作的上下文。
+      placeholder: |
+        1. 在配置中打开被支持的浏览器 (Edge)...
+        2. 按下全局快捷键 'Ctrl+Q'...
+        3. 发现没成功提取文本，且托盘弹出报错，日志详情如下...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: ✅ 预期行为 (Expected Behavior)
+      description: 当您执行上面的操作时，原本期望发生什么交互反馈？
+      placeholder: |
+        剪贴板正常采集，并在右下角系统托盘上抛出成功的通知气泡。
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: ❌ 实际行为 (Actual Behavior)
+      description: 实际上发生了报错或崩溃？请附上截图（如有）或控制台报错日志详情。
+      placeholder: |
+        没有采集到文字，脚本抛出了关于找不到 "hwnd" 的 Invalid Argument Error。
+    validations:
+      required: true

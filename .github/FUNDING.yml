@@ -1,0 +1,8 @@
+# 这个配置文件能够点亮你 GitHub 仓库主页上的粉色 "Sponsor" 按钮，
+# 并为想要支持你的世界各地的开发者提供弹窗指引选项。
+
+github: nothing248 # 请替换为您的 GitHub 用户名（需先开通 GitHub Sponsors）
+open_collective: snippet-collector # 如果您有 Open Collective 账号，可填入
+custom: 
+  - https://www.buymeacoffee.com/nothing248 # 替换为您的 买杯咖啡 链接
+  - https://afdian.com/a/nothing248 # 中国受众强烈建议使用“爱发电”，填入您的主页
