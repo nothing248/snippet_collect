@@ -1,3 +1,5 @@
+[English](CONTRIBUTING_en.md) | [简体中文](CONTRIBUTING.md)
+
 # 参与贡献 (Contributing to Snippet Collector)
 
 首先，非常感谢您对 **Snippet Collector** 社区感兴趣！🎉 我们非常欢迎不同背景和技术栈的开发者加入进来，无论是改进文档、提交一个 Bug、还是为全平台架构贡献新代码，您的支持都是项目成长的主要动力。

@@ -1,14 +1,18 @@
+[English](README_en.md) | [简体中文](README.md)
+
 # 📝 Snippet Collector
 
 **针对不同平台的文本摘录解决方案**
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)]()
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)]()
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)]()
 
-![Demo GIF](docs/demo.gif)
-*(预留占位：建议在此处放置一张展示核心功能的 GIF 动图)*
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/377db5b3-ef0d-420b-9db3-6efbaac7b2af" alt="Windows Demo" height="280">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/ffcf7788-e363-47ec-8ce1-f22719c939ca" alt="Android Demo" height="280">
+</div>
 
 ---
 
@@ -55,6 +59,7 @@ cd snippet_collect
 
 - [ ] 基于 Autojs6 的 Android 其他手机厂适配支持
 - [ ] 云同步支持
+- [ ] 摘录市场
 
 ## ❤️ 支持与赞助 (Sponsorship)
 
@@ -64,14 +69,14 @@ cd snippet_collect
 您的每一份支持，都将化作深夜维护者手旁的一杯咖啡☕️，或是转化为覆盖更多设备测试模型的全职投入。我们绝非在寻求施舍，而是坚信开源生态的互相激励与回馈能让世界变得更好。
 
 <div align="center">
-  <a href="https://github.com/sponsors/nothing248"><img src="https://img.shields.io/badge/Sponsor-GitHub-EA4AAA?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Sponsors"></a>
+  <!-- <a href="https://github.com/sponsors/nothing248"><img src="https://img.shields.io/badge/Sponsor-GitHub-EA4AAA?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Sponsors"></a>
   <a href="https://www.buymeacoffee.com/nothing248"><img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
-  <br><br>
+  <br><br> -->
   <!-- 建议：将二维码图片上传至项目的 docs 文件夹或 GitHub 图床，并替换下面的链接 -->
-  <img src="https://via.placeholder.com/200x200.png?text=WeChat+QR" width="160" alt="微信赞助">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://via.placeholder.com/200x200.png?text=Alipay+QR" width="160" alt="支付宝赞助">
-  <p><em>（国内用户推荐直接扫描 微信 / 支付宝 二维码进行快速支持）</em></p>
+  <!-- <img src="https://via.placeholder.com/200x200.png?text=WeChat+QR" width="160" alt="微信赞助"> -->
+  <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+  <img src="https://qiniu.sxyxy.top/支付宝-个人收钱码.png" width="160" alt="支付宝赞助">
+  <!-- <p><em>（国内用户推荐直接扫描 微信 / 支付宝 二维码进行快速支持）</em></p> -->
 </div>
 
 <!-- ### 🌟 赞助者名人堂 (Wall of Fame)

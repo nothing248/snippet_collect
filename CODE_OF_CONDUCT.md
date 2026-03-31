@@ -1,3 +1,5 @@
+[English](CODE_OF_CONDUCT_en.md) | [简体中文](CODE_OF_CONDUCT.md)
+
 # 🤝 我们的贡献者社区行为准则 (Code of Conduct)
 
 *(本文档由 [贡献者公约 2.1 版本](https://www.contributor-covenant.org/zh-cn/version/2/1/code_of_conduct/) 的严格中文标准译本采纳调整生成)*

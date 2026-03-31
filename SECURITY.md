@@ -1,3 +1,5 @@
+[English](SECURITY_en.md) | [简体中文](SECURITY.md)
+
 # 🛡️ 安全响应与策略 (Security Policy)
 
 非常感谢您关注 **Snippet Collector** 的安全性。由于本项目涉及多环境较高权限的调用（如无障碍权限、系统全局热键探测、日志监听、悬浮窗拦截），安全性和用户隐私防护始终是社区架构维护组的第一指导要旨。

@@ -1,3 +1,5 @@
+[English](README_en.md) | [简体中文](README.md)
+
 # 🐧 Snippet Collector (Windows 版)
 
 这是针对 Windows 环境的文本摘录实现。采用了极度轻量化、普及度极高的 **AutoHotkey v2 (AHK)** 编写而成。以最小的系统开销提供极致流畅的内容归档体验。

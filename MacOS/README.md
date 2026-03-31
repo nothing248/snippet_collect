@@ -1,3 +1,5 @@
+[English](README_en.md) | [简体中文](README.md)
+
 # 🍎 Snippet Collector (macOS 版)
 
 这是针对 macOS 环境的文本摘录实现。它使用 **Hammerspoon** 作为热键绑定入口，并调用后端的 **Bash 脚本** 和 **AppleScript** 来实现自动化的“选中、复制、获取来源、写入”闭环。
