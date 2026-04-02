@@ -52,8 +52,21 @@ osascript -e 'tell application "System Events" to keystroke "c" using command do
 # 等待剪贴板更新
 sleep 0.3
 
-# 读取新剪贴板内容到临时文件
-pbpaste > "$TMP_NEW_CLIP" 2>/dev/null
+# 由于从某些现代浏览器（如 Chrome 下的 Gemini、ChatGPT 等）直接 pbpaste 获取纯文本会彻底丢失段落结构，
+# 这里优先尝试提取剪贴板底层 HTML 并利用操作系统的 textutil 重新解析出包含完美排版缩进和换行的纯文本。
+TMP_HTML=$(mktemp)
+osascript -e 'the clipboard as "HTML"' 2>/dev/null | perl -ne 's/.*«data HTML//i; s/».*//; print chr(hex($1)) while /([0-9a-f]{2})/ig' > "$TMP_HTML"
+
+if [ -s "$TMP_HTML" ]; then
+    # 通过 perl 清理各种零宽字符、将 textutil 输出的系统圆点列表转换回 Markdown 的 “- ” 列表，并转换不换行空格
+    textutil -convert txt -format html "$TMP_HTML" -stdout 2>/dev/null | \
+    perl -Mutf8 -CSD -pe 's/\x{200B}|\x{200C}|\x{200D}|\x{FEFF}|\x{FFFC}//g; s/\x{00A0}/ /g; s/^([ \t]*)(?:\x{2022}|\x{25E6}|\x{25AA}|-)[ \t]+/$1- /g; s/\r\n|\r/\n/g;' > "$TMP_NEW_CLIP"
+else
+    # 纯文本或无 HTML 的情况，安全兜底，同样过滤一遍非法边界字符
+    pbpaste | \
+    perl -Mutf8 -CSD -pe 's/\x{200B}|\x{200C}|\x{200D}|\x{FEFF}|\x{FFFC}//g; s/\x{00A0}/ /g; s/\r\n|\r/\n/g;' > "$TMP_NEW_CLIP" 2>/dev/null
+fi
+rm -f "$TMP_HTML"
 CONTEXT_TEXT=$(cat "$TMP_NEW_CLIP")
 
 if [ -z "$CONTEXT_TEXT" ]; then
@@ -165,30 +178,38 @@ URL=$(get_browser_url "$APP_NAME")
 # =============================================================================
 # 5. 格式化文本
 # =============================================================================
-
 # 将多个连续空行合并为单个空行，并对每行添加两个空格缩进（Markdown 列表格式）
 # 使用 printf 而非 echo，避免转义符被解释；LC_ALL=en_US.UTF-8 确保 sed 正确处理中文
 FORMATTED_TEXT=$(printf '%s\n' "$CONTEXT_TEXT" \
     | sed '/^[[:space:]]*$/d; s/^/  /' \
     | awk 'NF || prev_nf { print } { prev_nf = NF }')
 
+# # 使用代码块包裹，100% 确保保留换行，不会被 Markdown 引擎压缩折叠
+# FORMATTED_TEXT=$(printf '```text\n%s\n```' "$CONTEXT_TEXT")
+
 # =============================================================================
 # 6. 写入 Markdown 文件
 # =============================================================================
 
+# 根据 URL 是否有效，渲染来源链接或纯文本
+if [[ "$URL" == "N/A" ]]; then
+    SOURCE_INFO="*${APP_NAME}:${WINDOW_TITLE}*"
+else
+    SOURCE_INFO="<a href=\"${URL}\">${APP_NAME}:${WINDOW_TITLE}</a>"
+fi
+
 # 格式：
 # ## YYYY-MM-DD HH:mm:ss
 #
-#   $context（每行前有两个空格缩进）
+# > $context（每行前有引用缩进）
 #
-# <p align="right"> <a href="$url">$app_name:$title</a> </p>
+# <p align="right"> $SOURCE_INFO </p>
 
 OUTPUT_ENTRY="## ${CURRENT_DATETIME}
 
 ${FORMATTED_TEXT}
 
-<p align=\"right\"> <a href=\"${URL}\">${APP_NAME}:${WINDOW_TITLE}</a> </p>
-"
+<p align=\"right\"> ${SOURCE_INFO} </p>"
 
 printf '%s\n' "$OUTPUT_ENTRY" >> "$FILE_NAME"
 

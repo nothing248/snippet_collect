@@ -1,3 +1,5 @@
 tmp/
 prompts/
+*.log
+.DS_Store
 
