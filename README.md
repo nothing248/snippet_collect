@@ -61,30 +61,30 @@ cd snippet_collect
 - [ ] 云同步支持
 - [ ] 摘录市场
 
-## ❤️ 支持与赞助 (Sponsorship)
+<!-- ## ❤️ 支持与赞助 (Sponsorship)
 
 **Snippet Collector** 是出于对知识管理效率的极致追求而诞生的开源个人极客工具，它完全免费体验且没有任何侵入式商业广告。
 
 若是这个小小的工具恰好在某个碎片化的阅读时刻为您节省了宝贵的时间，或是改善了您过去割裂的摘录流体验，您可以考虑通过赞助来支持本项目的持续维护进程！
-您的每一份支持，都将化作深夜维护者手旁的一杯咖啡☕️，或是转化为覆盖更多设备测试模型的全职投入。我们绝非在寻求施舍，而是坚信开源生态的互相激励与回馈能让世界变得更好。
+您的每一份支持，都将化作深夜维护者手旁的一杯咖啡☕️，或是转化为覆盖更多设备测试模型的全职投入。我们绝非在寻求施舍，而是坚信开源生态的互相激励与回馈能让世界变得更好。 -->
 
-<div align="center">
+<!-- <div align="center"> -->
   <!-- <a href="https://github.com/sponsors/nothing248"><img src="https://img.shields.io/badge/Sponsor-GitHub-EA4AAA?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Sponsors"></a>
   <a href="https://www.buymeacoffee.com/nothing248"><img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
   <br><br> -->
   <!-- 建议：将二维码图片上传至项目的 docs 文件夹或 GitHub 图床，并替换下面的链接 -->
   <!-- <img src="https://via.placeholder.com/200x200.png?text=WeChat+QR" width="160" alt="微信赞助"> -->
   <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
-  <img src="https://qiniu.sxyxy.top/支付宝-个人收钱码.png" width="160" alt="支付宝赞助">
+  <!-- <img src="https://qiniu.sxyxy.top/支付宝-个人收钱码.png" width="160" alt="支付宝赞助"> -->
   <!-- <p><em>（国内用户推荐直接扫描 微信 / 支付宝 二维码进行快速支持）</em></p> -->
-</div>
+<!-- </div> -->
 
 <!-- ### 🌟 赞助者名人堂 (Wall of Fame)
 衷心感谢以下为本项目发电的早期战略支持者（名次不分先后）：
 * *虚位以待... 期待您的加入！* -->
 
-> ⚖️ **财务透明与信任声明 (Transparency & Trust)**
-> 您所赞助的所有款项，将 100% 透明地反哺于核心开源建设：包括但不限于：维持多类型跨终端脚本更新迭代的长期云服务支持、采购兼容性适配所需的特定系统测试真机、以及用做奖金池向做出杰出代码贡献的社区其他开发者分发激励。每一笔高于特定周期的入账，我们都会在版本迭代的 Release 中为您署名致谢。
+<!-- > ⚖️ **财务透明与信任声明 (Transparency & Trust)**
+> 您所赞助的所有款项，将 100% 透明地反哺于核心开源建设：包括但不限于：维持多类型跨终端脚本更新迭代的长期云服务支持、采购兼容性适配所需的特定系统测试真机、以及用做奖金池向做出杰出代码贡献的社区其他开发者分发激励。每一笔高于特定周期的入账，我们都会在版本迭代的 Release 中为您署名致谢。 -->
 
 ## 🤝 参与贡献 (Contributing)
 

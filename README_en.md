@@ -61,9 +61,9 @@ In a macOS or Windows environment, select text within any complex formatting web
 - [ ] Cloud sync support
 - [ ] Extraction Market
 
-## ❤️ Support & Sponsorship
+<!-- ## ❤️ Support & Sponsorship -->
 
-**Snippet Collector** is an open-source personal geek tool born out of an ultimate pursuit of knowledge management efficiency. It's completely free to experience and contains no intrusive commercial ads.
+<!-- **Snippet Collector** is an open-source personal geek tool born out of an ultimate pursuit of knowledge management efficiency. It's completely free to experience and contains no intrusive commercial ads.
 
 If this small tool happens to save you precious time during a fragmented reading moment or improves your previously disjointed extraction workflow, please consider supporting the project's continuous maintenance through a sponsorship! Your support will be converted into a cup of coffee ☕️ for the maintainer deep into the night or into full-time commitment to covering more device testing models. We are not begging, but we firmly believe that mutual motivation and feedback within the open-source ecosystem can make the world a better place.
 
@@ -72,7 +72,7 @@ If this small tool happens to save you precious time during a fragmented reading
 </div>
 
 > ⚖️ **Transparency & Trust Statement**
-> All sponsored funds will be 100% transparently reinvested into core open-source construction: including but not limited to maintaining long-term cloud service support for multi-type cross-terminal script updates, purchasing specific real devices needed for compatibility testing, and distributing incentives to other community developers making outstanding code contributions. For every contribution exceeding a certain cycle, we will acknowledge you by name in the release notes of version iterations.
+> All sponsored funds will be 100% transparently reinvested into core open-source construction: including but not limited to maintaining long-term cloud service support for multi-type cross-terminal script updates, purchasing specific real devices needed for compatibility testing, and distributing incentives to other community developers making outstanding code contributions. For every contribution exceeding a certain cycle, we will acknowledge you by name in the release notes of version iterations. -->
 
 ## 🤝 Contributing
 
