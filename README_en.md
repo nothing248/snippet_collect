@@ -91,6 +91,7 @@ The smooth operation of Snippet Collector depends on the support of the followin
 *   [Autojs6](https://github.com/SuperMonster003/AutoJs6) - Powerful JavaScript automation tool for the Android platform
 *   [AutoKey](https://github.com/autokey/autokey) - Flexible desktop automation tool
 *   [Hammerspoon](https://www.hammerspoon.org/) - Geek-level macOS desktop automation weapon
+*   [LINUX DO](https://linux.do/) - Thanks to the support and feedback from the LINUX DO community.
 
 ---
 

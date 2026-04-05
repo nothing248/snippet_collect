@@ -103,7 +103,7 @@ Snippet Collector 的平稳运行离不开以下优秀项目的支持：
 *   [Autojs6](https://github.com/SuperMonster003/AutoJs6) - 安卓平台强大的 JavaScript 自动化工具
 *   [AutoKey](https://github.com/autokey/autokey) - 灵活的桌面自动化工具
 *   [Hammerspoon](https://www.hammerspoon.org/) - 极客级 macOS 桌面自动化利器
-
+*   [LINUX DO](https://linux.do/) - 感谢 LINUX DO 社区的支持与反馈。
 ---
 
 <div align="center">
